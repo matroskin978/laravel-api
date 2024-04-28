@@ -11,6 +11,7 @@ Route::get('/v1/categories', [\App\Http\Controllers\Api\V1\CategoryController::c
 
 Route::prefix('v1')->group(function () {
     Route::apiResource('categories', \App\Http\Controllers\Api\V1\CategoryController::class);
+    Route::apiResource('posts', \App\Http\Controllers\Api\V1\PostController::class);
 });
 
 
